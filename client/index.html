@@ -17,12 +17,17 @@
     <div id="main">
       <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
-      <div id="chats"></div>
-      <div id="roomSelect"></div>
-      <form id="message">
-        <input type="text" name="msg"><br>
-        <input id="send" class="submit" type="submit" value="Submit"><br>
+      <form>
+        <label>Room:</label>
+        <select id="roomSelect">
+          <option selected="selected">New room...</option>
+        </select>
       </form>
+      <form action="#" id="send" method="post">
+        <input type="text" id="message" name="msg"><br>
+        <input type="submit" class="submit" value="Submit"><br>
+      </form>
+      <div id="chats"></div>
     </div>
   </body>
 </html>
